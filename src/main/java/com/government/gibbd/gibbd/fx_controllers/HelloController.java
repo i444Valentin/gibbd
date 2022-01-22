@@ -1,4 +1,4 @@
-package com.government.gibbd.gibbd;
+package com.government.gibbd.gibbd.fx_controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
