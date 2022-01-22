@@ -5,7 +5,7 @@ import javafx.scene.control.Label;
 import org.springframework.stereotype.Component;
 
 @Component
-public class HelloController {
+public class Authorization {
     @FXML
     private Label welcomeText;
 
