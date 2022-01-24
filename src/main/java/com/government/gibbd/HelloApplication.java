@@ -17,7 +17,7 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         ConfigurableApplicationContext applicationContext = SpringApplication.run(HelloApplication.class);
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("authorization_scene.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("layout/authorization_scene.fxml"));
         fxmlLoader.setControllerFactory(applicationContext::getBean);
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Госавтоинспекция и ГИББД");
