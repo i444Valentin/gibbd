@@ -27,7 +27,7 @@
          <children>
             <ImageView fitHeight="83.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@images/logo_orig.png" />
+                  <Image url="@../images/logo_orig.png" />
                </image>
             </ImageView>
             <Label layoutX="190.0" layoutY="24.0" prefHeight="35.0" prefWidth="312.0" text="Госавтоинспекция и ГИББД">
