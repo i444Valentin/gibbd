@@ -1,4 +1,4 @@
-package com.government.gibbd.gibbd.fx_controllers;
+package com.government.gibbd.fx_controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -10,7 +10,7 @@ public class Authorization {
     private Label welcomeText;
 
     @FXML
-    protected void onHelloButtonClick() {
+    protected void onSingInButtonClick() {
         welcomeText.setText("Welcome to JavaFX Application!");
     }
 }
