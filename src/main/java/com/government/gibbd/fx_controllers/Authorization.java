@@ -9,6 +9,14 @@ public class Authorization {
     @FXML
     private Label welcomeText;
 
+
+
+
+    @FXML
+    void initialize(){
+
+    }
+
     @FXML
     protected void onSingInButtonClick() {
         welcomeText.setText("Welcome to JavaFX Application!");
