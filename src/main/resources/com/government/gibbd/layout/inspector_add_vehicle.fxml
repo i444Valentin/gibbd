@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="642.0" prefWidth="886.0" style="-fx-background-color: RGB(181,213,202);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.government.gibbd.fx_controllers.InspectorAddVehicle">
+   <children>
+      <AnchorPane prefHeight="83.0" prefWidth="886.0" style="-fx-background-color: RGB(224,169,175);">
+         <children>
+            <ImageView fitHeight="83.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo_orig.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="229.0" layoutY="24.0" prefHeight="35.0" prefWidth="312.0" text="Госавтоинспекция и ГИББД" AnchorPane.leftAnchor="229.0" AnchorPane.rightAnchor="228.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="229.0" layoutY="97.0" prefHeight="35.0" prefWidth="312.0" text="Добавить транспорт">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="45.0" layoutY="165.0" promptText="VIN номер авто">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="45.0" layoutY="225.0" promptText="Марка">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="45.0" layoutY="282.0" promptText="Модель">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="45.0" layoutY="340.0" promptText="Тип ТС">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="317.0" layoutY="165.0" promptText="Категория ТС">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="317.0" layoutY="282.0" promptText="Год выпуска">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="317.0" layoutY="399.0" promptText="Номер двигателя">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="317.0" layoutY="339.0" promptText="Модель двигателя">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="317.0" layoutY="457.0" promptText="Год двигателя">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="317.0" layoutY="225.0" promptText="Номер цвета">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="45.0" layoutY="398.0" promptText="Мощность двигателя, кВт">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="45.0" layoutY="457.0" promptText="Мощность двигателя в л.с">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="577.0" layoutY="398.0" promptText="Максимальная нагрузка (кг)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="577.0" layoutY="225.0" promptText="Вес автомобиля">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="577.0" layoutY="165.0" promptText="Тип привода">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="577.0" layoutY="282.0" promptText="Комментарии">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="577.0" layoutY="457.0" promptText="Владелец">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="313.0" layoutY="550.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="233.0" text="Добавить" />
+      <ComboBox layoutX="577.0" layoutY="339.0" prefHeight="39.0" prefWidth="224.0" promptText="Тип двигателя" style="-fx-font-size: 18;" visibleRowCount="3" />
+   </children>
+</AnchorPane>
