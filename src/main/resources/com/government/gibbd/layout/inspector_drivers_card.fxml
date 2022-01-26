@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="553.0" prefWidth="1025.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.government.gibbd.layout.InspectorDriverCardController">
+<AnchorPane prefHeight="553.0" prefWidth="1025.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.government.gibbd.fx_controllers.InspectorDriverCardController">
    <children>
       <AnchorPane prefHeight="83.0" prefWidth="769.0" style="-fx-background-color: RGB(224,169,175);" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
