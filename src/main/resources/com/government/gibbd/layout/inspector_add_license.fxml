@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="518.0" prefWidth="692.0" style="-fx-background-color: RGB(181,213,202);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.government.gibbd.fx_controllers.InspectorAddLicense">
+   <children>
+      <AnchorPane prefHeight="82.0" prefWidth="692.0" style="-fx-background-color: RGB(224,169,175);">
+         <children>
+            <ImageView fitHeight="83.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo_orig.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="192.0" layoutY="24.0" prefHeight="35.0" prefWidth="308.0" text="Госавтоинспекция и ГИББД" AnchorPane.leftAnchor="192.0" AnchorPane.rightAnchor="192.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="120.0" layoutY="95.0" prefHeight="35.0" prefWidth="454.0" text="Добавить водительское удостоверение">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ownerInput" layoutX="31.0" layoutY="161.0" promptText="Владелец">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="licenseNumberInput" layoutX="31.0" layoutY="229.0" promptText="Номер лицензии">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="licenseSerialInput" layoutX="31.0" layoutY="297.0" promptText="Серия лицензии">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="441.0" layoutY="161.0" text="Катерогии:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="categoryACheckbox" layoutX="403.0" layoutY="200.0" mnemonicParsing="false" text="A">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="categoryBCheckbox" layoutX="464.0" layoutY="200.0" mnemonicParsing="false" text="B">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="categoryCCheckbox" layoutX="522.0" layoutY="200.0" mnemonicParsing="false" text="C">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="categoryDCheckbox" layoutX="588.0" layoutY="200.0" mnemonicParsing="false" text="D">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="categoryD1Checkbox" layoutX="589.0" layoutY="235.0" mnemonicParsing="false" text="D1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="categoryD1ECheckbox" layoutX="589.0" layoutY="268.0" mnemonicParsing="false" text="D1E">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="categoryC1Checkbox" layoutX="522.0" layoutY="235.0" mnemonicParsing="false" text="C1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="categoryDECheckbox" layoutX="590.0" layoutY="303.0" mnemonicParsing="false" text="DE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="categoryC1ECheckbox" layoutX="522.0" layoutY="268.0" mnemonicParsing="false" text="C1E">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="categoryCECheckbox" layoutX="522.0" layoutY="303.0" mnemonicParsing="false" text="CE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="categoryB1Checkbox" layoutX="464.0" layoutY="235.0" mnemonicParsing="false" text="B1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="categoryBECheckbox" layoutX="464.0" layoutY="268.0" mnemonicParsing="false" text="BE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="categoryA1Checkbox" layoutX="403.0" layoutY="235.0" mnemonicParsing="false" text="A1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="categoryMCheckbox" layoutX="403.0" layoutY="303.0" mnemonicParsing="false" text="M">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <DatePicker fx:id="startDatePick" layoutX="31.0" layoutY="373.0" prefHeight="35.0" prefWidth="224.0" promptText="Дата выпуска" style="-fx-font-size: 18;" />
+      <DatePicker fx:id="endDatePick" layoutX="405.0" layoutY="373.0" prefHeight="35.0" prefWidth="224.0" promptText="Дата окончания" style="-fx-font-size: 18;" />
+      <Button layoutX="239.0" layoutY="456.0" mnemonicParsing="false" onAction="#onAddLicenseButtonClick" prefHeight="39.0" prefWidth="215.0" text="Добавить">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

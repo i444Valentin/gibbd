@@ -88,6 +88,20 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>mark</groupId>
+            <artifactId>regmarklib</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/com/regmarklib.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>vin</groupId>
+            <artifactId>vinlib</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/com/vinlib.jar</systemPath>
+        </dependency>
     </dependencies>
 
     <build>
@@ -115,7 +129,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.government.gibbd.gibbd/com.government.gibbd.gibbd.HelloApplication
+                            <mainClass>com.government.gibbd.gibbd/com.government.gibbd.HelloApplication
                             </mainClass>
                         </configuration>
                     </execution>

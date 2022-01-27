@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="553.0" prefWidth="713.0" style="-fx-background-color: RGB(181,213,202);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.government.gibbd.fx_controllers.InspectorMainController">
+   <children>
+      <AnchorPane prefHeight="83.0" prefWidth="769.0" style="-fx-background-color: RGB(224,169,175);" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fitHeight="83.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo_orig.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="189.0" layoutY="24.0" prefHeight="35.0" prefWidth="335.0" text="Госавтоинспекция и ГИББД" AnchorPane.leftAnchor="189.0" AnchorPane.rightAnchor="189.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="201.0" layoutY="97.0" prefHeight="35.0" prefWidth="312.0" text="Главное меню">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="260.0" layoutY="182.0" mnemonicParsing="false" onAction="#onDriverCardButtonClick" text="Карточки водителей">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="179.0" layoutY="238.0" mnemonicParsing="false" onAction="#onLicenseButtonClick" text="Карточки водительского удостоверения">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="265.0" layoutY="297.0" mnemonicParsing="false" onAction="#onAddDriverButtonClick" text="Добавить водителя">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="253.0" layoutY="409.0" mnemonicParsing="false" onAction="#onAddCarButtonClick" text="Добавить автомобиль">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="181.0" layoutY="353.0" mnemonicParsing="false" onAction="#onAddLicenseButtonClick" text="Добавить водительское удостоверение">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
