@@ -9,7 +9,6 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="631.0" prefWidth="1032.0" style="-fx-background-color: RGB(181,213,202);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.government.gibbd.fx_controllers.InspectorDriverLicenseCard">
    <children>
       <AnchorPane prefHeight="83.0" prefWidth="1032.0" style="-fx-background-color: RGB(224,169,175);">
@@ -41,7 +40,7 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Circle fill="#191b1c" layoutX="565.0" layoutY="599.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-fill: gray;" />
+      <Circle fx:id="indicatorCircle" fill="#191b1c" layoutX="565.0" layoutY="599.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-fill: gray;" />
       <Label layoutX="166.0" layoutY="341.0" prefHeight="27.0" prefWidth="69.0" style="-fx-text-fill: purple;" text="3.">
          <font>
             <Font name="System Bold" size="18.0" />
@@ -77,10 +76,10 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <TableView layoutX="665.0" layoutY="102.0" prefHeight="497.0" prefWidth="360.0">
+      <TableView fx:id="driversTable" layoutX="665.0" layoutY="102.0" prefHeight="497.0" prefWidth="360.0">
         <columns>
-          <TableColumn prefWidth="158.0" text="Водитель" />
-          <TableColumn prefWidth="171.0" text="Номер удостоверения" />
+          <TableColumn fx:id="driverColumn" prefWidth="158.0" text="Водитель" />
+          <TableColumn fx:id="licenseNumberColumn" prefWidth="171.0" text="Номер удостоверения" />
         </columns>
       </TableView>
       <Label layoutX="228.0" layoutY="253.0" text="Фамилия">
@@ -93,66 +92,66 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="228.0" layoutY="341.0" text="01.01.2015">
+      <Label fx:id="year" layoutX="228.0" layoutY="341.0" text="01.01.2015">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="228.0" layoutY="280.0" text="SURNAME">
+      <Label fx:id="surnameOutput" layoutX="228.0" layoutY="280.0" text="SURNAME">
          <font>
             <Font name="Bell MT" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="228.0" layoutY="327.0" text="NAME MIDDLE">
+      <Label fx:id="nameMiddleOutput" layoutX="228.0" layoutY="327.0" text="NAME MIDDLE">
          <font>
             <Font name="Bell MT" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="229.0" layoutY="394.0" text="G. MOSKVA">
+      <Label fx:id="cityEnOutput" layoutX="229.0" layoutY="394.0" text="G. MOSKVA">
          <font>
             <Font name="Bell MT" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="228.0" layoutY="368.0" prefHeight="27.0" prefWidth="125.0" text="Г. МОСКВА">
+      <Label fx:id="cityOutput" layoutX="228.0" layoutY="368.0" prefHeight="27.0" prefWidth="125.0" text="Г. МОСКВА">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="228.0" layoutY="412.0" text="01.01.2015">
+      <Label fx:id="year2Output" layoutX="228.0" layoutY="412.0" text="01.01.2015">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="228.0" layoutY="436.0" text="ГИББД 1234">
+      <Label fx:id="gibbdNumOutput" layoutX="228.0" layoutY="436.0" text="ГИББД 1234">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="229.0" layoutY="468.0" text="GIBBD 1234">
+      <Label fx:id="gibbdEnNumOutput" layoutX="229.0" layoutY="468.0" text="GIBBD 1234">
          <font>
             <Font name="Bell MT" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="228.0" layoutY="502.0" text="11 11 111111">
+      <Label fx:id="num2Output" layoutX="228.0" layoutY="502.0" text="11 11 111111">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="229.0" layoutY="556.0" text="G. MOSKVA">
+      <Label fx:id="city2EnOutput" layoutX="229.0" layoutY="556.0" text="G. MOSKVA">
          <font>
             <Font name="Bell MT" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="228.0" layoutY="529.0" prefHeight="27.0" prefWidth="125.0" text="Г. МОСКВА">
+      <Label fx:id="city2Output" layoutX="228.0" layoutY="529.0" prefHeight="27.0" prefWidth="125.0" text="Г. МОСКВА">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="255.0" layoutY="573.0" text="B B1">
+      <Label fx:id="categoriesOutput" layoutX="255.0" layoutY="573.0" text="B B1">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <ImageView fitHeight="224.0" fitWidth="114.0" layoutX="33.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="driverImage" fitHeight="224.0" fitWidth="114.0" layoutX="33.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>

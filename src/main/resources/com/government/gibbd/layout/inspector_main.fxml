@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="553.0" prefWidth="713.0" style="-fx-background-color: RGB(181,213,202);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.government.gibbd.fx_controllers.InspectorDriverCardController">
+<AnchorPane prefHeight="553.0" prefWidth="713.0" style="-fx-background-color: RGB(181,213,202);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.government.gibbd.fx_controllers.InspectorMainController">
    <children>
       <AnchorPane prefHeight="83.0" prefWidth="769.0" style="-fx-background-color: RGB(224,169,175);" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
@@ -28,27 +28,27 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <Button layoutX="260.0" layoutY="182.0" mnemonicParsing="false" text="Карточки водителей">
+      <Button layoutX="260.0" layoutY="182.0" mnemonicParsing="false" onAction="#onDriverCardButtonClick" text="Карточки водителей">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="179.0" layoutY="238.0" mnemonicParsing="false" text="Карточки водительского удостоверения">
+      <Button layoutX="179.0" layoutY="238.0" mnemonicParsing="false" onAction="#onLicenseButtonClick" text="Карточки водительского удостоверения">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="265.0" layoutY="297.0" mnemonicParsing="false" text="Добавить водителя">
+      <Button layoutX="265.0" layoutY="297.0" mnemonicParsing="false" onAction="#onAddDriverButtonClick" text="Добавить водителя">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="253.0" layoutY="409.0" mnemonicParsing="false" text="Добавить автомобиль">
+      <Button layoutX="253.0" layoutY="409.0" mnemonicParsing="false" onAction="#onAddCarButtonClick" text="Добавить автомобиль">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="181.0" layoutY="353.0" mnemonicParsing="false" text="Добавить водительское удостоверение">
+      <Button layoutX="181.0" layoutY="353.0" mnemonicParsing="false" onAction="#onAddLicenseButtonClick" text="Добавить водительское удостоверение">
          <font>
             <Font size="18.0" />
          </font>

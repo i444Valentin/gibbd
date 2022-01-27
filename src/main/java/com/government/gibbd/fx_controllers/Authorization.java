@@ -1,17 +1,21 @@
 package com.government.gibbd.fx_controllers;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import org.springframework.stereotype.Component;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 
-@Component
 public class Authorization {
 
     @FXML
-    void initialize(){
-
-    }
+    private TextField loginTextField;
 
     @FXML
-    protected void onSingInButtonClick() {
+    private PasswordField passwordTextField;
+
+    @FXML
+    void onSingInButtonClick(ActionEvent event) {
+
     }
+
 }

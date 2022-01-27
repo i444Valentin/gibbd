@@ -31,92 +31,96 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <TextField layoutX="45.0" layoutY="165.0" promptText="VIN номер авто">
+      <TextField fx:id="vinInput" layoutX="45.0" layoutY="165.0" promptText="VIN номер авто">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="45.0" layoutY="225.0" promptText="Марка">
+      <TextField fx:id="manufacturerInput" layoutX="45.0" layoutY="225.0" promptText="Марка">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="45.0" layoutY="282.0" promptText="Модель">
+      <TextField fx:id="modelInput" layoutX="45.0" layoutY="282.0" promptText="Модель">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="45.0" layoutY="340.0" promptText="Тип ТС">
+      <TextField fx:id="vehicleTypeInput" layoutX="45.0" layoutY="340.0" promptText="Тип ТС">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="317.0" layoutY="165.0" promptText="Категория ТС">
+      <TextField fx:id="vehicleCategoryInput" layoutX="317.0" layoutY="165.0" promptText="Категория ТС">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="317.0" layoutY="282.0" promptText="Год выпуска">
+      <TextField fx:id="manufactureYearInput" layoutX="317.0" layoutY="282.0" promptText="Год выпуска">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="317.0" layoutY="399.0" promptText="Номер двигателя">
+      <TextField fx:id="engineNumberInput" layoutX="317.0" layoutY="399.0" promptText="Номер двигателя">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="317.0" layoutY="339.0" promptText="Модель двигателя">
+      <TextField fx:id="engineModelInput" layoutX="317.0" layoutY="339.0" promptText="Модель двигателя">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="317.0" layoutY="457.0" promptText="Год двигателя">
+      <TextField fx:id="engineYearInput" layoutX="317.0" layoutY="457.0" promptText="Год двигателя">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="317.0" layoutY="225.0" promptText="Номер цвета">
+      <TextField fx:id="colorInput" layoutX="317.0" layoutY="225.0" promptText="Номер цвета">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="45.0" layoutY="398.0" promptText="Мощность двигателя, кВт">
+      <TextField fx:id="enginePowerInput" layoutX="45.0" layoutY="398.0" promptText="Мощность двигателя, кВт">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="45.0" layoutY="457.0" promptText="Мощность двигателя в л.с">
+      <TextField fx:id="enginePowerHorseInput" layoutX="45.0" layoutY="457.0" promptText="Мощность двигателя в л.с">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="577.0" layoutY="398.0" promptText="Максимальная нагрузка (кг)">
+      <TextField fx:id="maxWeightInput" layoutX="577.0" layoutY="398.0" promptText="Максимальная нагрузка (кг)">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="577.0" layoutY="225.0" promptText="Вес автомобиля">
+      <TextField fx:id="vehicleWeightInput" layoutX="577.0" layoutY="225.0" promptText="Вес автомобиля">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="577.0" layoutY="165.0" promptText="Тип привода">
+      <TextField fx:id="driveTypeInput" layoutX="577.0" layoutY="165.0" promptText="Тип привода">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="577.0" layoutY="282.0" promptText="Комментарии">
+      <TextField fx:id="commentsInput" layoutX="577.0" layoutY="282.0" promptText="Комментарии">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="577.0" layoutY="457.0" promptText="Владелец">
+      <TextField fx:id="ownerInput" layoutX="577.0" layoutY="457.0" promptText="Владелец">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <Button layoutX="313.0" layoutY="550.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="233.0" text="Добавить" />
-      <ComboBox layoutX="577.0" layoutY="339.0" prefHeight="39.0" prefWidth="224.0" promptText="Тип двигателя" style="-fx-font-size: 18;" visibleRowCount="3" />
+      <Button layoutX="313.0" layoutY="550.0" mnemonicParsing="false" onAction="#onAddVehicleButtonClick" prefHeight="35.0" prefWidth="233.0" text="Добавить">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="engineTypeSelect" layoutX="577.0" layoutY="339.0" prefHeight="39.0" prefWidth="224.0" promptText="Тип двигателя" style="-fx-font-size: 18;" visibleRowCount="3" />
    </children>
 </AnchorPane>
